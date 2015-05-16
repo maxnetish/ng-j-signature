@@ -1,0 +1,7 @@
+/.idea
+/node_modules
+/build
+/bower_components
+dep.txt
+projectFilesBackup/.idea/workspace.xml
+*.log
