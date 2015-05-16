@@ -11,12 +11,38 @@
        target="_blank">angular</a> binding.</h1>
 
 <div ng-app="App" ng-controller="appController">
-    <span>{{foo}}</span>
+    <ng-j-signature ng-model="vm.signatureValue" j-signature-options="vm.signatureOptions"></ng-j-signature>
+    <div>
+        <label>height</label>
+        <input type="text" ng-model="height"/>
+    </div>
+    <div>
+        <label>width</label>
+        <input type="text" ng-model="width"/>
+    </div>
+    <div>
+        <label>sizeRatio</label>
+        <input type="text" ng-model="sizeRatio"/>
+    </div>
+    <div>
+        <label>readOnly</label>
+        <input type="checkbox" ng-model="readOnly" />
+    </div>
+    <div>
+        <label>lineWidth</label>
+        <input type="text" ng-model="lineWidth"/>
+    </div>
+    <button type="button" ng-click="applySettings()">Apply settings</button>
+    <div>
+        <label>Signature value:</label>
+        <div><p ng-bind="vm.signatureValue"></p></div>
+    </div>
 </div>
 <script src="assert/jquery.js"></script>
 <script src="assert/angular.js"></script>
 <script src="assert/jSignature.js"></script>
 <script src="assert/jSignature.CompressorBase30.js"></script>
+<script src="assert/jSignature.CompressorSVG.js"></script>
 <script src="lib/ng-j-signature.js"></script>
 <script src="app/app.js"></script>
 </body>

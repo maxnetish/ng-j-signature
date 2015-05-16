@@ -32,6 +32,10 @@ module.exports = function (grunt) {
                         dest: buildAssertPath + '/jSignature.CompressorBase30.js'
                     },
                     {
+                        src: bowerPath + '/jSignature/src/plugin/jSignature.CompressorSVG.js',
+                        dest: buildAssertPath + '/jSignature.CompressorSVG.js'
+                    },
+                    {
                         src: bowerPath + '/angular/angular.js',
                         dest: buildAssertPath + '/angular.js'
                     }
